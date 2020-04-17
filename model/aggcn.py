@@ -83,7 +83,7 @@ class GCNRelationModel(nn.Module):
 
         adj = inputs_to_tree_reps(head.data, l)
         h, pool_mask = self.gcn(adj, inputs)
-
+        import pdb; pdb.set_trace()
         # pooling
         subj_mask, obj_mask = subj_pos.eq(0).eq(0).unsqueeze(2), obj_pos.eq(0).eq(0).unsqueeze(2)  # invert mask
         pool_type = self.opt['pooling']

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af7e3394-2930-4ef5-832a-498225e6a2eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_aggcn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/train_aggcn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/aggcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/aggcn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
