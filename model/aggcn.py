@@ -79,11 +79,13 @@ class GCNRelationModel(nn.Module):
             adj = [tree_to_adj(maxlen, tree, directed=False).reshape(1, maxlen, maxlen) for tree in trees]
             adj = np.concatenate(adj, axis=0)
             adj = torch.from_numpy(adj)
+            # Create a ones matrix
+            adj = np.ones(adj.shape)
             return Variable(adj.cuda()) if self.opt['cuda'] else Variable(adj)
 
         adj = inputs_to_tree_reps(head.data, l)
         h, pool_mask = self.gcn(adj, inputs)
-        import pdb; pdb.set_trace()
+        # import pdb; pdb.set_trace()
         # pooling
         subj_mask, obj_mask = subj_pos.eq(0).eq(0).unsqueeze(2), obj_pos.eq(0).eq(0).unsqueeze(2)  # invert mask
         pool_type = self.opt['pooling']
