@@ -81,6 +81,7 @@ class GCNRelationModel(nn.Module):
             adj = torch.from_numpy(adj)
             # Create a ones matrix
             adj = np.ones(adj.shape)
+            adj = torch.from_numpy(adj)
             return Variable(adj.cuda()) if self.opt['cuda'] else Variable(adj)
 
         adj = inputs_to_tree_reps(head.data, l)
