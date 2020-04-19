@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af7e3394-2930-4ef5-832a-498225e6a2eb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/AGGCN_TACRED.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AGGCN_TACRED.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/aggcn.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/aggcn.py" afterDir="false" />
     </list>
