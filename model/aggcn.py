@@ -85,7 +85,7 @@ class GCNRelationModel(nn.Module):
             # adj = torch.from_numpy(adj)
             # adj = adj.float()
             # Create a random matrix
-            adj = np.random.randint(2, shape=adj.shape)
+            adj = np.random.randint(2, size=adj.shape)
             adj = torch.from_numpy(adj)
             adj = adj.float()
             return Variable(adj.cuda()) if self.opt['cuda'] else Variable(adj)
